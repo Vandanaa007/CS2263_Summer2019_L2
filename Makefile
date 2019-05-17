@@ -8,7 +8,11 @@
 ##########################################
 
 # compile with gcc, change this to clang if you prefer
+<<<<<<< HEAD
 COMPILER = gcc -std=c99
+=======
+COMPILER = gcc
+>>>>>>> 76a3425b61af7ebb2ff6f6c0030ac54d900cef60
 
 # The C flags to pass to gcc
 C_FLAGS = -Wall -Wextra
@@ -44,4 +48,8 @@ test2: ArraySort Data/test2.input Data/test2.expected
 
 test3: ArraySort Data/test3.input Data/test3.expected
 	./ArraySort < Data/test3.input > test3.result
+<<<<<<< HEAD
 	./TestPassed.sh test3.result Data/test3.expected
+=======
+	./TestPassed.sh test3.result Data/test3.expected
+>>>>>>> 76a3425b61af7ebb2ff6f6c0030ac54d900cef60
